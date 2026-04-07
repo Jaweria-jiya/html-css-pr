@@ -385,7 +385,7 @@ html{
 
     .journal{
         width: 100%;
-        height: 170vh;
+        height: 160vh;
         background-color: #464747;
         padding: 16rem 0;
     }
@@ -416,6 +416,3 @@ html{
         margin-top: 2.5rem;
     }
 }
-
-
-
