@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Meie+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* ####################### utility classes ######################### */
+
+.container{
+    width: 95%;
+    margin: auto;
+    /* background-color: rgb(216, 215, 215); */
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.8rem 4.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: #797c81;
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 1rem 5.5rem;
+    color: #a2a2a3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    background-color: #ebeef3;
+}
+
+.btn-secondary{
+    display: inline-block;
+    padding: 2rem 3.9rem;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    background-color: #797c81;
+}
+
+.btn-third{
+    display: inline-block;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid white;
+    background: transparent;
+    padding: 1.7rem 6.5rem;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-third:hover{
+    background-color: white;
+    color: #9c9ca0;
+}
+
+/* ######################## navbar styling #########################  */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    background-color: #000000;
+    opacity: 0.85;
+    padding: 1rem 0;
+    color: white;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+    width: 25%;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    justify-content: space-between;
+}
+
+.menu-items a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.navbar-container .logo{
+    color: white;
+    order: 1;
+    font-size: 4rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.icons{
+    order: 3;
+    width: 15%;
+    gap: 70px;
+}
+
+.icons .fa-brands,
+.icons .fa-solid{
+    font-size: 30px;
+}
+
+
+/* ################################# SHOWCASE styling ######################### */
+.showcase-container {
+    height: 90vh;
+    background: url(./img/pl1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text h1 {
+    width: 500px;    
+    font-size: 65px;
+    font-weight: 300;
+    color: white;  
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    margin-bottom: 2rem;
+}
+
+
+/* ################################### FAN FAVORITES styling ################################## */
+
+.fan-favorites{
+    background-color: #464747;
+    color: white;
+}
+
+.fan-fav-container{
+    text-align: center;
+}
+
+.fan-fav-container h1{
+    /* color: white; */
+    font-size: 8rem;
+    font-weight: 400;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+    text-align: center;
+}
+
+.fan-fav-img h1 {
+    text-align: center;    
+}
+
+.fan-fav-img{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.fav-img .fav-imgs{
+    height: 700px;
+}
+
+.fan-fav-img .fav-img h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.fan-fav-img .fav-img h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.fav-img-btn{
+    font-size: 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+    padding: 1.5rem 8rem;
+}
+
+/* ######################## STYLE styling ######################### */
+
+.style{
+    width: 100%;
+    height: 95vh;
+    background: url(./img/pl2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ############################### HOME JOURNEL styling ########################## */
+
+.home-journal{
+    background-color: #9c9ca0;
+    /* background-color: #7c7d80; */
+    text-align: center;
+    /* color: #ebeef3; */
+    color: white;
+}
+
+.home-journal h1{
+    font-size: 8rem;
+    font-weight: 400;
+    padding: 11rem 0;
+}
+
+.home-jours{
+    width: 92%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.home-jours .jour-1{
+    width: 50%;
+}
+
+.home-jours .jour-2{
+    width: 50%;
+}
+
+
+.home-jour-text{
+    padding-top: 5rem;
+}
+
+.home-jour-text h2{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 4.5rem;
+}
+
+.home-jour-text h4{
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.home-jour-text .home-jour-btn{
+    margin-top: 4.5rem;
+    margin-bottom: 10rem;
+}
+
+/* ######################### GROW UP styling ########################### */
+
+.grow-up{
+    background: url(./img/pl3.webp);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.grow-up-container h1{
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.grow-up-container h4{
+    font-size: 2.6rem;
+    font-weight: 200;
+}
+
+.grow-up-container input{
+    width: 350px;
+    padding: 3rem 3rem;
+    margin-top: 4rem;
+}
+
+.grow-up-container .grow-up-btn{
+    margin-top: 4rem;
+}
+
+
+/* ############################## GIFT CARD styling ######################## */
+
+.gift-card{
+    height: 120vh;
+    background-color: #9c9ca0;
+}
+
+.gift-card-container{
+    display: flex;
+    padding-top: 9rem;
+    color: white;
+}
+
+.img-container{
+    background: url(./img/pl4.webp);
+    width: 40%;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 3rem;
+}
+
+.img-container h1{
+    margin: 47% 24%;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.text-container{
+    width: 40%;
+    margin-left: 15rem;
+    padding-top: 17rem;
+}
+
+.text-container h1{
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    margin-bottom: 4rem;
+}
+
+.text-container h4{
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+
+/* ################################## Foooter styling ##################### */
+
+.footer{
+    height: 50vh;
+    background-color: #464747;
+    display: flex;
+    padding: 7rem;
+    color: white;
+}
+
+.footer-text1{
+    width: 60%;
+}
+
+.footer-text1 h1{
+    font-size: 4.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.footer-text1 h2{
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+}
+
+.footer-text1 h2 span{
+    color: #a2a2a3;
+    text-decoration: 2px solid underline;
+    margin-left: 4px;
+}
+
+.footer-text1 .footer-icons{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text1 .footer-icons a{
+    font-size: 2.4rem;
+    color: white;
+}
+
+.footer-text2{
+    width: 20%;
+}
+
+.footer-text2 h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: #a2a2a3;
+    text-decoration: 2px solid underline;
+    margin-bottom: 0.6rem;
+}
+
+.footer-text3{
+    width: 20%;
+}
+
+.footer-text3 h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: #a2a2a3;
+    text-decoration: 2px solid underline;
+    margin-bottom: 0.6rem;
+}
+
+
+/* ############################################## RESPONSIVE ##########################  */
+
+@media(max-width:786px){
+    html{
+        font-size: 50% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ############## Navbar styling ########### */
+
+   .navbar input[type="checkbox"],
+    .navbar .hamburger-lines{
+        display: block;
+    }
+
+    .navbar{
+        display: block !important;
+        width: 100% !important;
+        opacity: 1;
+    }
+
+    .navbar-container{
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute !important;
+        display: block !important;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 1002;
+        opacity: 0 !important;
+        cursor: pointer;
+        background-color: pink !important;
+    }
+
+    .navbar-container .hamburger-lines{
+        position: absolute;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        opacity: 2;
+        display: flex;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        order: 1;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white !important;
+    }
+
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0,0;
+        transition: transform,background-color 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0,100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        position: fixed;
+        top: 70px !important;
+        padding-top: 50px;
+        background-color: white;
+        height: 100vh !important;
+        width: 300px !important;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+        padding-left: 3rem;
+        z-index: 1000;
+        transition: transform 0.4s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+
+    .menu-items{
+        justify-content: flex-start;
+        gap: 3.5rem;
+    }
+
+    .navbar .menu-items li a{
+        color: #464747;
+        font-weight: 600;
+        margin-bottom: 7rem !important;
+        z-index: 100;
+    }
+
+    .logo{
+        order: 2;
+        position: absolute;
+        right: 20px;
+        font-size: 4.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: translateY(14px) rotate(45deg)
+    }
+
+     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        display: none;
+    }
+
+     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: translateY(-14px) rotate(-45deg)
+    }
+
+    .navbar .icons{ display:none !important; }
+
+    /* ############## showcase ########### */
+
+    .text h1 {
+        width: 100%;    
+        font-size: 55px !important;
+        font-weight: 300;
+        color: white;  
+        text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        margin-bottom: 2rem;
+    }
+
+    /* ########### fan fav ############ */
+
+    .fan-fav-container{
+        width: 100%;
+    }
+
+    .fan-fav-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fav-img .fav-imgs{
+        display: inline-block;
+        width: 100% !important;
+        height: 500px !important;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .fan-fav-img .fav-img h3{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10rem;
+    }
+
+    .fav-img-btn{
+        margin-top: -2rem;
+    }
+
+    /* ############### Style styling ########## */
+
+    .style{
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    /* ################# journal ############## */
+
+    .home-journal{
+        width: 100%;
+    }
+
+    .home-jours{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .home-jours .jour-1{
+        width: 100% !important;
+    }
+
+    .home-jours .jour-1 img{
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .home-jours .jour-2{
+        width: 100% !important;
+    }
+
+    .home-jours .jour-2 img{
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    .home-jour-text h2{
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: -1px !important;
+        margin-bottom: 1.8rem !important;
+    }
+
+    .home-jour-text h4{
+        font-size: 2rem;
+        line-height: 20px !important;
+    }
+
+    .home-jour-text .home-jour-btn{
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+    }
+
+    /* ############### GrowUP styling ############ */
+
+    .grow-up{
+        background: url(./img/pl3.webp);
+        height: 100vh !important;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .grow-up-container{
+        margin-top: 35%;
+        padding: 0 1rem;
+    }
+
+    .grow-up-container h1{
+        font-size: 5rem !important;
+        margin-bottom: 2rem;
+    }
+
+    .grow-up-container h4{
+        font-size: 2.2rem !important;
+        font-weight: 200;
+    }
+
+    /* ############ GIFT CARD styling ########### */
+
+    .gift-card{
+        height: 185vh !important;
+        width: 100%;
+        background-color: #9c9ca0;
+    }
+
+    .gift-card-container{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        padding-top: 9rem;
+        color: white;
+    }
+
+    .img-container{
+        background: url(./img/pl4.webp);
+        width: 87% !important;
+        height: 90vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 3rem;
+    }
+
+    .img-container h1{
+        margin: 73% 0 !important;
+        font-size: 60px !important;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+
+    .text-container{
+        width: 87% !important;
+        margin-left: 8% !important;
+        padding-top: 10rem !important;
+    }
+
+    /* ############# FOOTER styling ########### */
+
+    .footer{
+        height: 70vh !important;
+        padding: 7rem 1rem !important;
+        flex-direction: column;
+    }
+
+    .footer-text1{
+        width: 100% !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .footer-text2{
+        width: 100% !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .footer-text2{
+        width: 100% !important;
+    }
+}

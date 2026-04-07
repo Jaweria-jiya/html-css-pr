@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Meie+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* ####################### utility classes ######################### */
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.8rem 4.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: #797c81;
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 1rem 5.5rem;
+    color: #a2a2a3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    background-color: #ebeef3;
+}
+
+.btn-secondary{
+    display: inline-block;
+    padding: 2rem 3.9rem;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    background-color: #797c81;
+}
+
+.btn-third{
+    display: inline-block;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid white;
+    background: transparent;
+    padding: 1.7rem 6.5rem;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-third:hover{
+    background-color: white;
+    color: #9c9ca0;
+}
+
+/* ######################## navbar styling #########################  */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    background-color: #000000;
+    opacity: 0.85;
+    padding: 1rem 0;
+    color: white;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+    width: 25%;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    justify-content: space-between;
+}
+
+.menu-items a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.navbar-container .logo{
+    color: white;
+    order: 1;
+    font-size: 4rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.icons{
+    order: 3;
+    width: 15%;
+    gap: 70px;
+}
+
+.icons .fa-brands,
+.icons .fa-solid{
+    font-size: 30px;
+}
+
+/* ################################## Foooter styling ##################### */
+
+.footer{
+    height: 50vh;
+    background-color: #464747;
+    display: flex;
+    padding: 7rem;
+    color: white;
+}
+
+.footer-text1{
+    width: 60%;
+}
+
+.footer-text1 h1{
+    font-size: 4.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.footer-text1 h2{
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+}
+
+.footer-text1 h2 span{
+    color: #a2a2a3;
+    text-decoration: 2px solid underline;
+    margin-left: 4px;
+}
+
+.footer-text1 .footer-icons{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text1 .footer-icons a{
+    font-size: 2.4rem;
+    color: white;
+}
+
+.footer-text2{
+    width: 20%;
+}
+
+.footer-text2 h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: #a2a2a3;
+    text-decoration: 2px solid underline;
+    margin-bottom: 0.6rem;
+}
+
+.footer-text3{
+    width: 20%;
+}
+
+.footer-text3 h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: #a2a2a3;
+    text-decoration: 2px solid underline;
+    margin-bottom: 0.6rem;
+}
+
+
+/* ################## contact us styling ################# */
+
+.contact-us{
+    background: url(./img/pl3.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 105vh;
+    color: white;
+    text-align: center;
+    padding: 18rem;
+}
+
+.contact-us h1{
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+.contact-us h4{
+    width: 700px;
+    margin: 4rem auto;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+@media(max-width:786px){
+    html{
+        font-size: 50% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ############## Navbar styling ########### */
+
+   .navbar input[type="checkbox"],
+    .navbar .hamburger-lines{
+        display: block;
+    }
+
+    .navbar{
+        display: block !important;
+        width: 100% !important;
+        opacity: 1;
+    }
+
+    .navbar-container{
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute !important;
+        display: block !important;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 1002;
+        opacity: 0 !important;
+        cursor: pointer;
+        background-color: pink !important;
+    }
+
+    .navbar-container .hamburger-lines{
+        position: absolute;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        opacity: 2;
+        display: flex;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        order: 1;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white !important;
+    }
+
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0,0;
+        transition: transform,background-color 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0,100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        position: fixed;
+        top: 70px !important;
+        padding-top: 50px;
+        background-color: white;
+        height: 100vh !important;
+        width: 300px !important;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+        padding-left: 3rem;
+        z-index: 1000;
+        transition: transform 0.4s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+    }
+
+    .menu-items{
+        justify-content: flex-start;
+        gap: 3.5rem;
+    }
+
+    .navbar .menu-items li a{
+        color: #464747;
+        font-weight: 600;
+        margin-bottom: 7rem !important;
+        z-index: 100;
+    }
+
+    .logo{
+        order: 2;
+        position: absolute;
+        right: 20px;
+        font-size: 4.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: translateY(14px) rotate(45deg)
+    }
+
+     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        display: none;
+    }
+
+     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: translateY(-14px) rotate(-45deg)
+    }
+
+    .navbar .icons{ display:none !important; }
+
+    /* ############# FOOTER styling ########### */
+
+    .footer{
+        height: 70vh !important;
+        padding: 7rem 1rem !important;
+        flex-direction: column;
+    }
+
+    .footer-text1{
+        width: 100% !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .footer-text2{
+        width: 100% !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .footer-text2{
+        width: 100% !important;
+    }
+
+    /* ############### contact us styling ############## */
+
+    .contact-us{
+        background: url(./img/pl3.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 105vh;
+        color: white;
+        text-align: center;
+        padding: 5px !important;
+        padding-top: 50% !important;
+    }
+
+    .contact-us h1{
+        font-size: 7rem;
+        font-weight: 400;
+    }
+
+    .contact-us h4{
+        width: 100%;
+        margin: 4rem auto;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
